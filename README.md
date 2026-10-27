@@ -23,7 +23,7 @@ Agents guess API names when they have nothing better. These files give them the 
 | File | For | Contents |
 |---|---|---|
 | [`skills/pqblocks/SKILL.md`](skills/pqblocks/SKILL.md) | Claude Code, Claude agents | Rules, task → package table, migration workflow, index of reference files |
-| [`skills/pqblocks/reference/*.md`](skills/pqblocks/reference) | Loaded on demand | One per package (26): install, import, CLI, native dependency, executed quickstart, evidence links |
+| [`skills/pqblocks/reference/*.md`](skills/pqblocks/reference) | Loaded on demand | One per package: install, import, CLI, native dependency, executed quickstart, evidence links |
 | [`.cursor/rules/pqblocks.mdc`](.cursor/rules/pqblocks.mdc) | Cursor | Rules and task table, applied when crypto or optimisation code is touched |
 | [`AGENTS.md`](AGENTS.md) | Copilot, Codex, Gemini, Aider, any agent | Rules and task table to drop into a project root |
 | [`llms.txt`](llms.txt) | Agents that read the web | Index of these files and the full catalog |
@@ -64,7 +64,7 @@ The files are generated, not hand-written:
 python3 scripts/gen_skills.py      # reads data/catalog.json
 ```
 
-`data/catalog.json` is produced by `pqblocks-mcp/scripts/build_catalog.py --verify`, which runs every package quickstart. The generator refuses to write files if any entry is unverified, and checks that every task in the table routes to a package that exists.
+`data/catalog.json` is synced every six hours from the [published catalog](https://pqblocks.github.io/catalog.json), which is built from the package repositories with every quickstart executed (`.github/workflows/sync-catalog.yml`). The generator uses only verified packages, so new packages join the skill without hand edits.
 
 ## Part of PQBlocks, a QubitRock project
 

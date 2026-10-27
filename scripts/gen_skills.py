@@ -3,8 +3,8 @@
 
     python3 scripts/gen_skills.py
 
-data/catalog.json comes from pqblocks-mcp/scripts/build_catalog.py, which executes every package
-quickstart before writing it. Nothing in the generated files names an API by hand, so an agent that
+data/catalog.json is synced from https://pqblocks.github.io/catalog.json, built from the package
+repositories with every quickstart executed. Nothing in the generated files names an API by hand, so an agent that
 follows them writes code against the real package.
 """
 import json
@@ -64,22 +64,25 @@ def short(p):
 
 
 def main():
-    pkgs = json.load(open(os.path.join(ROOT, "data", "catalog.json"), encoding="utf-8"))["packages"]
+    every = json.load(open(os.path.join(ROOT, "data", "catalog.json"), encoding="utf-8"))["packages"]
+    # only verified packages that are not held back; new ones join automatically
+    pkgs = [p for p in every if p.get("verified") is True and not p.get("held")]
     by = {p["package"]: p for p in pkgs}
-    bad = [p["package"] for p in pkgs if p.get("verified") is not True]
-    for _, names in TASKS:
-        for n in names.split(", "):
-            assert n in by, "task routes to unknown package %s" % n
-    if bad:
-        raise SystemExit("refusing to publish unverified quickstarts: %s" % bad)
 
     table = ["| Task | Package | Install | Import |", "|---|---|---|---|"]
     for task, names in TASKS:
-        first = by[names.split(", ")[0]]
-        pk = ", ".join("[`%s`](reference/%s.md)" % (n, short(by[n])) for n in names.split(", "))
+        live = [n for n in names.split(", ") if n in by]
+        if not live:                          # a routed package that is not published right now
+            print("task skipped, no published package: %s" % task)
+            continue
+        first = by[live[0]]
+        pk = ", ".join("[`%s`](reference/%s.md)" % (n, short(by[n])) for n in live)
         table.append("| %s | %s | `%s` | `%s` |" % (task, pk, first["install"], first["import"]))
 
     os.makedirs(os.path.join(SKILL, "reference"), exist_ok=True)
+    for f in os.listdir(os.path.join(SKILL, "reference")):     # a package no longer published loses its file
+        if f[:-3] not in {short(p) for p in pkgs}:
+            os.remove(os.path.join(SKILL, "reference", f))
     skill = ["---", "name: pqblocks",
              "description: Post-quantum engineering with the PQBlocks packages. Use when adding, migrating or "
              "auditing cryptography for the quantum threat (ML-KEM / FIPS 203, ML-DSA / FIPS 204, SLH-DSA / "

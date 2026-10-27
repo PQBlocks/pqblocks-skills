@@ -66,29 +66,29 @@ PQBlocks is an open-source organisation that builds verified post-quantum (PQ) c
 
 Each file holds the package summary, install line, import, command-line entry points and its executed quickstart. Read the one you need before writing code.
 
-- [`pqblocks-acvp`](reference/acvp.md): Cross-implementation NIST ACVP conformance harness for FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA).
+- [`pqblocks-core`](reference/core.md): Post-quantum hybrid cryptography core SDK with C shared libraries and policy enforcement.
+- [`pqblocks-files`](reference/files.md): Hybrid post-quantum file encryption: ML-KEM-768 plus X25519 key encapsulation with chunked ChaCha20-Poly1305 in the pfsh v1 format.
+- [`pqblocks-jose`](reference/jose.md): Post-quantum hybrid JOSE library supporting ML-KEM and ML-DSA JWE and JWS tokens.
+- [`pqblocks-primitives`](reference/primitives.md): Production-ready integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
 - [`pqblocks-agility`](reference/agility.md): Cryptographic Agility Readiness Scoring (CARS) and CI/CD regression firewall for CycloneDX 1.6 CBOM inventories.
+- [`pqblocks-cbom`](reference/cbom.md): CycloneDX 1.5 CBOM metadata enrichment engine injecting quantum-safe classifications and CNSA 2.0 compliance properties.
+- [`pqblocks-cnsa-evidence`](reference/cnsa-evidence.md): CNSA 2.0 evidence pack generator for quantum-safe compliance, CBOM generation, and migration scheduling.
+- [`pqblocks-jwe-audit`](reference/jwe-audit.md): High-throughput JSON Web Encryption (JWE) cryptographic policy auditor enforcing CNSA 2.0 and NIST FIPS 203 PQC standards.
+- [`pqblocks-lint`](reference/lint.md): Static analysis for Python source that finds classical and post-quantum cryptographic primitives with a source-to-sink taint pass and reports them as a CycloneDX 1.6 CBOM or a SARIF 2.1.0 log.
+- [`pqblocks-policy`](reference/policy.md): Policy-as-code engine for post-quantum cryptography compliance and CBOM verification.
+- [`pqblocks-scan`](reference/scan.md): Cryptography inventory scanner: finds classical and post-quantum algorithms in source code or a TLS endpoint and writes a CycloneDX 1.6 CBOM, a SARIF 2.1.0 report and a readiness grade.
+- [`pqblocks-csr-pop`](reference/csr-pop.md): ML-KEM (FIPS 203) PKCS#10 Certificate Signing Request (CSR) generator with RFC 9883 Proof of Possession (PoP).
+- [`pqblocks-jwe`](reference/jwe.md): Compact five-part wire format, with a serializer and structural parser, for hybrid ML-KEM-768 + X25519 JWE-style tokens; it performs no encryption itself.
+- [`pqblocks-tls-interop`](reference/tls-interop.md): TLS 1.3 hybrid key exchange (X25519MLKEM768 / RFC 10024) endpoint probe, downgrade detector, and key material validator.
+- [`pqblocks-wire`](reference/wire.md): Length-prefixed container format (PQCWF1) for ML-KEM ciphertexts and ML-DSA / SLH-DSA signatures, with thin wrappers over liboqs-python and pyca/cryptography; it implements no primitive itself.
+- [`pqblocks-acvp`](reference/acvp.md): Cross-implementation NIST ACVP conformance harness for FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA).
+- [`pqblocks-fips-check`](reference/fips-check.md): FIPS 203/204 boundary validator and hybrid key exchange (X25519 + ML-KEM-768) with ML-DSA-65 signatures and CBOM reporting.
 - [`pqblocks-anneal-sa`](reference/anneal-sa.md): Simulated Annealing heuristic solver for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography.
 - [`pqblocks-anneal-schedule`](reference/anneal-schedule.md): Quantum-inspired instance-adaptive simulated annealing with statistics-driven schedule generation for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography.
 - [`pqblocks-anneal-sqa`](reference/anneal-sqa.md): Simulated Quantum Annealing (Path-Integral Monte Carlo via Suzuki-Trotter decomposition) heuristic solver for Ising and QUBO optimization. Quantum-inspired classical optimization, not cryptography.
 - [`pqblocks-bifurcation`](reference/bifurcation.md): Simulated Bifurcation (ballistic and discrete) heuristic solver for Ising and QUBO problems. Quantum-inspired classical optimization, not cryptography.
-- [`pqblocks-cbom`](reference/cbom.md): CycloneDX 1.5 CBOM metadata enrichment engine injecting quantum-safe classifications and CNSA 2.0 compliance properties.
-- [`pqblocks-cnsa-evidence`](reference/cnsa-evidence.md): CNSA 2.0 evidence pack generator for quantum-safe compliance, CBOM generation, and migration scheduling.
-- [`pqblocks-core`](reference/core.md): Post-quantum hybrid cryptography core SDK with C shared libraries and policy enforcement.
-- [`pqblocks-csr-pop`](reference/csr-pop.md): ML-KEM (FIPS 203) PKCS#10 Certificate Signing Request (CSR) generator with RFC 9883 Proof of Possession (PoP).
 - [`pqblocks-digital-anneal`](reference/digital-anneal.md): Digital Annealer-style parallel-trial heuristic solver for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography.
-- [`pqblocks-files`](reference/files.md): Hybrid post-quantum file encryption: ML-KEM-768 plus X25519 key encapsulation with chunked ChaCha20-Poly1305 in the pfsh v1 format.
-- [`pqblocks-fips-check`](reference/fips-check.md): FIPS 203/204 boundary validator and hybrid key exchange (X25519 + ML-KEM-768) with ML-DSA-65 signatures and CBOM reporting.
-- [`pqblocks-jose`](reference/jose.md): Post-quantum hybrid JOSE library supporting ML-KEM and ML-DSA JWE and JWS tokens.
-- [`pqblocks-jwe`](reference/jwe.md): Compact five-part wire format, with a serializer and structural parser, for hybrid ML-KEM-768 + X25519 JWE-style tokens; it performs no encryption itself.
-- [`pqblocks-jwe-audit`](reference/jwe-audit.md): High-throughput JSON Web Encryption (JWE) cryptographic policy auditor enforcing CNSA 2.0 and NIST FIPS 203 PQC standards.
-- [`pqblocks-lint`](reference/lint.md): Static analysis for Python source that finds classical and post-quantum cryptographic primitives with a source-to-sink taint pass and reports them as a CycloneDX 1.6 CBOM or a SARIF 2.1.0 log.
-- [`pqblocks-policy`](reference/policy.md): Policy-as-code engine for post-quantum cryptography compliance and CBOM verification.
 - [`pqblocks-population-anneal`](reference/population-anneal.md): Population Annealing Monte Carlo heuristic solver for Ising models and QUBO combinatorial optimization. Quantum-inspired classical optimization, not cryptography.
-- [`pqblocks-primitives`](reference/primitives.md): Production-ready integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
 - [`pqblocks-qiea`](reference/qiea.md): Quantum-Inspired Evolutionary Algorithm (QIEA) with Q-bit representations and quantum rotation gates for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography.
 - [`pqblocks-qubo`](reference/qubo.md): Unified mathematical representation and converter library for Quadratic Unconstrained Binary Optimization (QUBO) and Ising formulations.
 - [`pqblocks-qubo-bench`](reference/qubo-bench.md): Benchmarking harness and standard instance loaders for quantum-inspired optimization algorithms against classical baselines.
-- [`pqblocks-scan`](reference/scan.md): Cryptography inventory scanner: finds classical and post-quantum algorithms in source code or a TLS endpoint and writes a CycloneDX 1.6 CBOM, a SARIF 2.1.0 report and a readiness grade.
-- [`pqblocks-tls-interop`](reference/tls-interop.md): TLS 1.3 hybrid key exchange (X25519MLKEM768 / RFC 10024) endpoint probe, downgrade detector, and key material validator.
-- [`pqblocks-wire`](reference/wire.md): Length-prefixed container format (PQCWF1) for ML-KEM ciphertexts and ML-DSA / SLH-DSA signatures, with thin wrappers over liboqs-python and pyca/cryptography; it implements no primitive itself.

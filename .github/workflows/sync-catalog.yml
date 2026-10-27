@@ -1,0 +1,29 @@
+name: Sync catalog
+
+# Pulls the published package catalog from the docs site, regenerates the skill, the Cursor rule,
+# AGENTS.md and llms.txt, and commits when anything changed.
+
+on:
+  schedule:
+    - cron: "52 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.12"
+      - run: curl -fsSL https://pqblocks.github.io/catalog.json -o data/catalog.json
+      - run: python3 scripts/gen_skills.py
+      - name: Commit when it changed
+        run: |
+          git add data skills .cursor AGENTS.md llms.txt
+          if git diff --cached --quiet; then echo "unchanged"; exit 0; fi
+          git -c user.name=MrGovindDubey -c user.email=govinddubeycse@gmail.com commit -m "chore: sync package catalog"
+          git push
