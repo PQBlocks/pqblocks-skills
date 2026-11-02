@@ -7,7 +7,7 @@ High-throughput JSON Web Encryption (JWE) cryptographic policy auditor enforcing
 High-throughput JSON Web Encryption (JWE) cryptographic policy auditor enforcing CNSA 2.0 and NIST FIPS 203 PQC standards.
 
 - **Area:** Migration & readiness
-- **Install:** `pip install git+https://github.com/PQBlocks/jwe-policy-auditor`
+- **Install:** `pip install pqblocks-jwe-audit`
 - **Import:** `import pqblocks_jwe_audit`
 - **Command line:** library only
 - **Native dependency:** none

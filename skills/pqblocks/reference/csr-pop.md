@@ -7,7 +7,7 @@ ML-KEM (FIPS 203) PKCS#10 Certificate Signing Request (CSR) generator with RFC 9
 ML-KEM (FIPS 203) PKCS#10 Certificate Signing Request (CSR) generator with RFC 9883 Proof of Possession (PoP).
 
 - **Area:** Interoperability
-- **Install:** `pip install git+https://github.com/PQBlocks/mlkem-csr-pop`
+- **Install:** `pip install pqblocks-csr-pop`
 - **Import:** `import pqblocks_csr_pop`
 - **Command line:** library only
 - **Native dependency:** none

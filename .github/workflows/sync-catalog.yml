@@ -25,5 +25,5 @@ jobs:
         run: |
           git add data skills .cursor AGENTS.md llms.txt
           if git diff --cached --quiet; then echo "unchanged"; exit 0; fi
-          git -c user.name=MrGovindDubey -c user.email=govinddubeycse@gmail.com commit -m "chore: sync package catalog"
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "chore: sync package catalog"
           git push

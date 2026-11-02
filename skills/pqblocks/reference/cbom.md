@@ -7,7 +7,7 @@ CycloneDX 1.5 CBOM metadata enrichment engine injecting quantum-safe classificat
 High-throughput CycloneDX 1.5 CBOM metadata enrichment engine injecting quantum-safe classifications and CNSA 2.0 compliance properties.
 
 - **Area:** Migration & readiness
-- **Install:** `pip install git+https://github.com/PQBlocks/cbom-enricher`
+- **Install:** `pip install pqblocks-cbom`
 - **Import:** `import pqblocks_cbom`
 - **Command line:** `pqblocks-cbom`
 - **Native dependency:** liboqs (Open Quantum Safe)

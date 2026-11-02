@@ -35,6 +35,7 @@ TASKS = [
     ("ML-KEM certificate signing request with proof of possession", "pqblocks-csr-pop"),
     ("Run NIST ACVP vectors against ML-KEM / ML-DSA implementations", "pqblocks-acvp"),
     ("Reject malformed or wrong-length FIPS 203/204 inputs at a boundary", "pqblocks-fips-check"),
+    ("Verify post-quantum X.509 certificate chains in browser or Node.js", "pqblocks-browser-pqc-verifier"),
     ("Build or convert QUBO / Ising models", "pqblocks-qubo"),
     ("Solve QUBO / Ising / Max-Cut (Simulated Bifurcation)", "pqblocks-bifurcation"),
     ("Simulated annealing / quantum annealing / population annealing / QIEA solvers",
@@ -114,12 +115,19 @@ def main():
         ref += [l for l in p["intro"]] + [""]
         if p["kind"] == "optimizer":
             ref += ["> Quantum-inspired classical optimisation: not cryptography, no security claim.", ""]
-        ref += ["- **Area:** %s" % p["area"], "- **Install:** `%s`" % p["install"], "- **Import:** `import %s`" % p["import"],
+        is_npm = p.get("ecosystem") == "npm" or p.get("install", "").startswith("npm")
+        import_line = "`import { ... } from '%s'`" % p["import"] if is_npm else "`import %s`" % p["import"]
+        status_line = "- **Status:** %s %s%s" % (
+            p["version"], p["status"],
+            (", Python %s" % p["python"]) if p.get("python") else (", Node.js / Browser" if is_npm else "")
+        )
+        quickstart_lang = p.get("quickstart_lang", "javascript" if is_npm else "python")
+        ref += ["- **Area:** %s" % p["area"], "- **Install:** `%s`" % p["install"], "- **Import:** %s" % import_line,
                 "- **Command line:** %s" % (", ".join("`%s`" % c for c in p["cli"]) or "library only"),
                 "- **Native dependency:** %s" % ("liboqs (Open Quantum Safe)" if p["needs_liboqs"] else "none"),
-                "- **Status:** %s %s, Python %s" % (p["version"], p["status"], p["python"]),
+                status_line,
                 "- **Docs:** %s/packages/%s/ · repository %s" % (SITE, short(p), p["url"]), "",
-                "## Quickstart (executed against the package)", "", "```python", p["quickstart"].rstrip(), "```", ""]
+                "## Quickstart (executed against the package)", "", "```" + quickstart_lang, p["quickstart"].rstrip(), "```", ""]
         if re.search(r"(?:keypair|keygen)\([^)]*\bseed\s*=", p["quickstart"]):
             ref += ["> **Remove `seed=` in production.** It is there for reproducible output; production keys must "
                     "come from the OS random source.", ""]

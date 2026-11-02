@@ -8,7 +8,7 @@ Post-quantum hybrid JOSE (Javascript Object Signing and Encryption) library prov
 `pqblocks-jose` combines NIST post-quantum primitives (FIPS 203 ML-KEM-768 and FIPS 204 ML-DSA-65) with classical counterparts (X25519, Ed25519) to ensure security against both quantum and classical adversaries without compromising backwards security.
 
 - **Area:** PQ cryptography
-- **Install:** `pip install git+https://github.com/PQBlocks/hybrid-jose`
+- **Install:** `pip install pqblocks-jose`
 - **Import:** `import pqblocks_jose`
 - **Command line:** `pqblocks-jose`
 - **Native dependency:** liboqs (Open Quantum Safe)

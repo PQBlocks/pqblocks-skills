@@ -10,7 +10,7 @@ How it works: it parses the code with Python's `ast` module (the code is never e
 **Read [Limitations](#limitations) before using the verdict as a CI gate.** Ed25519, DSA and finite-field DH are not detected, so a file using only those gets `NO_CRYPTO_DETECTED`.
 
 - **Area:** Migration & readiness
-- **Install:** `pip install git+https://github.com/PQBlocks/pqc-lint`
+- **Install:** `pip install pqblocks-lint`
 - **Import:** `import pqblocks_lint`
 - **Command line:** `pqblocks-lint`
 - **Native dependency:** liboqs (Open Quantum Safe)

@@ -7,7 +7,7 @@ FIPS 203/204 boundary validator and hybrid key exchange (X25519 + ML-KEM-768) wi
 FIPS 203/204 boundary validator and hybrid post-quantum key exchange (X25519 + ML-KEM-768) with ML-DSA-65 signatures and CBOM reporting.
 
 - **Area:** Conformance
-- **Install:** `pip install git+https://github.com/PQBlocks/fips-boundary-validator`
+- **Install:** `pip install pqblocks-fips-check`
 - **Import:** `import pqblocks_fips_check`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)

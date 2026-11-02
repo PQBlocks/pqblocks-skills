@@ -10,7 +10,7 @@ It follows CycloneDX 1.6 (`specVersion: "1.6"`), OASIS SARIF 2.1.0, the CNSA 2.0
 **Status: alpha.** Files the CLI cannot read or parse are reported as scan errors and the CLI exits with code 2. The CBOM validates against the official CycloneDX 1.6 JSON schema (tests/test_cbom_schema.py). Read [Limitations](#limitations) before relying on it.
 
 - **Area:** Migration & readiness
-- **Install:** `pip install git+https://github.com/PQBlocks/cbom-scanner`
+- **Install:** `pip install pqblocks-scan`
 - **Import:** `import pqblocks_scan`
 - **Command line:** `pqblocks-scan`
 - **Native dependency:** none

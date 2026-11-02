@@ -9,7 +9,7 @@ Use it when you already produce the AEAD ciphertext and the hybrid KEM ciphertex
 Standards used: base64url (RFC 4648 §5) and JSON (RFC 8259), with a layout modelled on JWE compact serialization (RFC 7516). The layout is **not** RFC 7516 compact serialization, and standard JOSE libraries cannot read it.
 
 - **Area:** Interoperability
-- **Install:** `pip install git+https://github.com/PQBlocks/hybrid-jwe`
+- **Install:** `pip install pqblocks-jwe`
 - **Import:** `import pqblocks_jwe`
 - **Command line:** library only
 - **Native dependency:** none

@@ -7,7 +7,7 @@ description: Post-quantum engineering with the PQBlocks packages. Use when addin
 
 # PQBlocks: post-quantum engineering
 
-PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 26 packages, Apache-2.0, docs at https://pqblocks.github.io.
+PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 29 packages, Apache-2.0, docs at https://pqblocks.github.io.
 
 ## Rules
 
@@ -32,23 +32,24 @@ PQBlocks is an open-source organisation that builds verified post-quantum (PQ) c
 
 | Task | Package | Install | Import |
 |---|---|---|---|
-| ML-KEM / ML-DSA / SLH-DSA primitives (keygen, encapsulate, sign) | [`pqblocks-primitives`](reference/primitives.md) | `pip install git+https://github.com/PQBlocks/fips-pqc-primitives` | `pqblocks_primitives` |
+| ML-KEM / ML-DSA / SLH-DSA primitives (keygen, encapsulate, sign) | [`pqblocks-primitives`](reference/primitives.md) | `pip install pqblocks-primitives` | `pqblocks_primitives` |
 | Hybrid ML-KEM-768 + X25519 key establishment, native speed | [`pqblocks-core`](reference/core.md) | `pip install git+https://github.com/PQBlocks/hybrid-sdk` | `pqblocks_core` |
-| Sign or verify JWTs / JWS with ML-DSA; encrypt JWE with ML-KEM | [`pqblocks-jose`](reference/jose.md) | `pip install git+https://github.com/PQBlocks/hybrid-jose` | `pqblocks_jose` |
-| Encrypt files or byte strings to a post-quantum public key | [`pqblocks-files`](reference/files.md) | `pip install git+https://github.com/PQBlocks/hybrid-file-encryption` | `pqblocks_files` |
-| Find RSA / ECC / weak hashes in code or a TLS endpoint; CBOM + SARIF | [`pqblocks-scan`](reference/scan.md) | `pip install git+https://github.com/PQBlocks/cbom-scanner` | `pqblocks_scan` |
-| Python crypto data-flow linting; CBOM + SARIF | [`pqblocks-lint`](reference/lint.md) | `pip install git+https://github.com/PQBlocks/pqc-lint` | `pqblocks_lint` |
-| Enrich a CycloneDX CBOM with quantum-safety and CNSA 2.0 tags | [`pqblocks-cbom`](reference/cbom.md) | `pip install git+https://github.com/PQBlocks/cbom-enricher` | `pqblocks_cbom` |
+| Sign or verify JWTs / JWS with ML-DSA; encrypt JWE with ML-KEM | [`pqblocks-jose`](reference/jose.md) | `pip install pqblocks-jose` | `pqblocks_jose` |
+| Encrypt files or byte strings to a post-quantum public key | [`pqblocks-files`](reference/files.md) | `pip install pqblocks-files` | `pqblocks_files` |
+| Find RSA / ECC / weak hashes in code or a TLS endpoint; CBOM + SARIF | [`pqblocks-scan`](reference/scan.md) | `pip install pqblocks-scan` | `pqblocks_scan` |
+| Python crypto data-flow linting; CBOM + SARIF | [`pqblocks-lint`](reference/lint.md) | `pip install pqblocks-lint` | `pqblocks_lint` |
+| Enrich a CycloneDX CBOM with quantum-safety and CNSA 2.0 tags | [`pqblocks-cbom`](reference/cbom.md) | `pip install pqblocks-cbom` | `pqblocks_cbom` |
 | Crypto-agility readiness score and CI regression gate | [`pqblocks-agility`](reference/agility.md) | `pip install pqblocks-agility` | `pqblocks_agility` |
-| Policy-as-code: fail CI on forbidden algorithms | [`pqblocks-policy`](reference/policy.md) | `pip install git+https://github.com/PQBlocks/crypto-policy-engine` | `pqblocks_policy` |
-| Audit which JWE / JOSE algorithms a gateway accepts | [`pqblocks-jwe-audit`](reference/jwe-audit.md) | `pip install git+https://github.com/PQBlocks/jwe-policy-auditor` | `pqblocks_jwe_audit` |
-| CNSA 2.0 compliance evidence pack | [`pqblocks-cnsa-evidence`](reference/cnsa-evidence.md) | `pip install git+https://github.com/PQBlocks/cnsa-evidence-pack` | `pqblocks_cnsa_evidence` |
+| Policy-as-code: fail CI on forbidden algorithms | [`pqblocks-policy`](reference/policy.md) | `pip install pqblocks-policy` | `pqblocks_policy` |
+| Audit which JWE / JOSE algorithms a gateway accepts | [`pqblocks-jwe-audit`](reference/jwe-audit.md) | `pip install pqblocks-jwe-audit` | `pqblocks_jwe_audit` |
+| CNSA 2.0 compliance evidence pack | [`pqblocks-cnsa-evidence`](reference/cnsa-evidence.md) | `pip install pqblocks-cnsa-evidence` | `pqblocks_cnsa_evidence` |
 | Probe a TLS 1.3 endpoint for X25519MLKEM768; hybrid key-schedule checks | [`pqblocks-tls-interop`](reference/tls-interop.md) | `pip install git+https://github.com/PQBlocks/tls-hybrid-interop` | `pqblocks_tls_interop` |
 | Binary container for ML-KEM ciphertexts and ML-DSA / SLH-DSA signatures | [`pqblocks-wire`](reference/wire.md) | `pip install git+https://github.com/PQBlocks/pqc-wireformat` | `pqblocks_wire` |
-| Five-part hybrid JWE wire layout (serialise / parse only, no encryption) | [`pqblocks-jwe`](reference/jwe.md) | `pip install git+https://github.com/PQBlocks/hybrid-jwe` | `pqblocks_jwe` |
-| ML-KEM certificate signing request with proof of possession | [`pqblocks-csr-pop`](reference/csr-pop.md) | `pip install git+https://github.com/PQBlocks/mlkem-csr-pop` | `pqblocks_csr_pop` |
+| Five-part hybrid JWE wire layout (serialise / parse only, no encryption) | [`pqblocks-jwe`](reference/jwe.md) | `pip install pqblocks-jwe` | `pqblocks_jwe` |
+| ML-KEM certificate signing request with proof of possession | [`pqblocks-csr-pop`](reference/csr-pop.md) | `pip install pqblocks-csr-pop` | `pqblocks_csr_pop` |
 | Run NIST ACVP vectors against ML-KEM / ML-DSA implementations | [`pqblocks-acvp`](reference/acvp.md) | `pip install pqblocks-acvp` | `pqblocks_acvp` |
-| Reject malformed or wrong-length FIPS 203/204 inputs at a boundary | [`pqblocks-fips-check`](reference/fips-check.md) | `pip install git+https://github.com/PQBlocks/fips-boundary-validator` | `pqblocks_fips_check` |
+| Reject malformed or wrong-length FIPS 203/204 inputs at a boundary | [`pqblocks-fips-check`](reference/fips-check.md) | `pip install pqblocks-fips-check` | `pqblocks_fips_check` |
+| Verify post-quantum X.509 certificate chains in browser or Node.js | [`pqblocks-browser-pqc-verifier`](reference/browser-pqc-verifier.md) | `npm install git+https://github.com/PQBlocks/browser-pqc-verifier` | `@pqblocks/browser-pqc-verifier` |
 | Build or convert QUBO / Ising models | [`pqblocks-qubo`](reference/qubo.md) | `pip install git+https://github.com/PQBlocks/qubo-core` | `pqblocks_qubo` |
 | Solve QUBO / Ising / Max-Cut (Simulated Bifurcation) | [`pqblocks-bifurcation`](reference/bifurcation.md) | `pip install git+https://github.com/PQBlocks/simulated-bifurcation` | `pqblocks_bifurcation` |
 | Simulated annealing / quantum annealing / population annealing / QIEA solvers | [`pqblocks-anneal-sa`](reference/anneal-sa.md), [`pqblocks-anneal-sqa`](reference/anneal-sqa.md), [`pqblocks-population-anneal`](reference/population-anneal.md), [`pqblocks-qiea`](reference/qiea.md) | `pip install pqblocks-anneal-sa` | `pqblocks_anneal_sa` |
@@ -68,6 +69,7 @@ Each file holds the package summary, install line, import, command-line entry po
 
 - [`pqblocks-core`](reference/core.md): Post-quantum hybrid cryptography core SDK with C shared libraries and policy enforcement.
 - [`pqblocks-files`](reference/files.md): Hybrid post-quantum file encryption: ML-KEM-768 plus X25519 key encapsulation with chunked ChaCha20-Poly1305 in the pfsh v1 format.
+- [`pqblocks-fips-dualmode`](reference/fips-dualmode.md): Dual-mode cryptographic abstraction switching between FIPS 140-3 classical crypto (ECDH/AES-GCM) and post-quantum crypto (ML-KEM/ML-DSA).
 - [`pqblocks-jose`](reference/jose.md): Post-quantum hybrid JOSE library supporting ML-KEM and ML-DSA JWE and JWS tokens.
 - [`pqblocks-primitives`](reference/primitives.md): Production-ready integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
 - [`pqblocks-agility`](reference/agility.md): Cryptographic Agility Readiness Scoring (CARS) and CI/CD regression firewall for CycloneDX 1.6 CBOM inventories.
@@ -82,6 +84,7 @@ Each file holds the package summary, install line, import, command-line entry po
 - [`pqblocks-tls-interop`](reference/tls-interop.md): TLS 1.3 hybrid key exchange (X25519MLKEM768 / RFC 10024) endpoint probe, downgrade detector, and key material validator.
 - [`pqblocks-wire`](reference/wire.md): Length-prefixed container format (PQCWF1) for ML-KEM ciphertexts and ML-DSA / SLH-DSA signatures, with thin wrappers over liboqs-python and pyca/cryptography; it implements no primitive itself.
 - [`pqblocks-acvp`](reference/acvp.md): Cross-implementation NIST ACVP conformance harness for FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA).
+- [`pqblocks-browser-pqc-verifier`](reference/browser-pqc-verifier.md): Post-quantum certificate and chain verifier for browsers and Node.js using ML-DSA/SLH-DSA from @noble/post-quantum.
 - [`pqblocks-fips-check`](reference/fips-check.md): FIPS 203/204 boundary validator and hybrid key exchange (X25519 + ML-KEM-768) with ML-DSA-65 signatures and CBOM reporting.
 - [`pqblocks-anneal-sa`](reference/anneal-sa.md): Simulated Annealing heuristic solver for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography.
 - [`pqblocks-anneal-schedule`](reference/anneal-schedule.md): Quantum-inspired instance-adaptive simulated annealing with statistics-driven schedule generation for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography.
@@ -92,3 +95,4 @@ Each file holds the package summary, install line, import, command-line entry po
 - [`pqblocks-qiea`](reference/qiea.md): Quantum-Inspired Evolutionary Algorithm (QIEA) with Q-bit representations and quantum rotation gates for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography.
 - [`pqblocks-qubo`](reference/qubo.md): Unified mathematical representation and converter library for Quadratic Unconstrained Binary Optimization (QUBO) and Ising formulations.
 - [`pqblocks-qubo-bench`](reference/qubo-bench.md): Benchmarking harness and standard instance loaders for quantum-inspired optimization algorithms against classical baselines.
+- [`pqblocks-sparse-bifurcation`](reference/sparse-bifurcation.md): Sparse Discrete Simulated Bifurcation (dSB) heuristic solver for large-scale Ising and QUBO combinatorial optimization.

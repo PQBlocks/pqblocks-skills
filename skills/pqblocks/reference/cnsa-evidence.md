@@ -8,7 +8,7 @@ CNSA 2.0 Procurement Evidence Pack Generator for federal contractors and enterpr
 `pqblocks-cnsa-evidence` parses cryptographic bill of materials (CBOM) scan results and multi-ecosystem build lockfiles to synthesize a formal, audit-ready evidence pack meeting US National Security Agency (NSA) Commercial National Security Algorithm Suite 2.0 (CNSA 2.0) compliance requirements.
 
 - **Area:** Migration & readiness
-- **Install:** `pip install git+https://github.com/PQBlocks/cnsa-evidence-pack`
+- **Install:** `pip install pqblocks-cnsa-evidence`
 - **Import:** `import pqblocks_cnsa_evidence`
 - **Command line:** library only
 - **Native dependency:** none

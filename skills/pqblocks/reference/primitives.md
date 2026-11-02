@@ -7,7 +7,7 @@ Production-ready integrated post-quantum cryptographic primitives (ML-KEM, ML-DS
 Production-ready integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
 
 - **Area:** PQ cryptography
-- **Install:** `pip install git+https://github.com/PQBlocks/fips-pqc-primitives`
+- **Install:** `pip install pqblocks-primitives`
 - **Import:** `import pqblocks_primitives`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)

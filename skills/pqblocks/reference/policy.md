@@ -8,7 +8,7 @@ Policy-as-code engine for evaluating cryptographic posture, post-quantum complia
 `pqblocks-policy` allows organizations to define, enforce, and audit cryptographic governance rules across systems, APIs, TLS endpoints, and software dependencies against modern post-quantum standards including NIST FIPS 203/204/205 and NSA CNSA 2.0.
 
 - **Area:** Migration & readiness
-- **Install:** `pip install git+https://github.com/PQBlocks/crypto-policy-engine`
+- **Install:** `pip install pqblocks-policy`
 - **Import:** `import pqblocks_policy`
 - **Command line:** `pqblocks-policy`
 - **Native dependency:** none

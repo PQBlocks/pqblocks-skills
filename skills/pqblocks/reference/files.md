@@ -9,7 +9,7 @@ Use it to encrypt files or byte strings to one or more recipients' public keys s
 Implements NIST FIPS 203 (ML-KEM-768, via liboqs), RFC 7748 (X25519), RFC 8439 (ChaCha20-Poly1305) and RFC 5869 (HKDF). **Not FIPS or CMVP validated. Pre-1.0: not independently audited.**
 
 - **Area:** PQ cryptography
-- **Install:** `pip install git+https://github.com/PQBlocks/hybrid-file-encryption`
+- **Install:** `pip install pqblocks-files`
 - **Import:** `import pqblocks_files`
 - **Command line:** `pqblocks-files`
 - **Native dependency:** liboqs (Open Quantum Safe)
