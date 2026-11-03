@@ -11,7 +11,7 @@ Implements the algorithms of Goto et al., *Science Advances* 2019 and 2021. Quan
 > Quantum-inspired classical optimisation: not cryptography, no security claim.
 
 - **Area:** Quantum-inspired
-- **Install:** `pip install git+https://github.com/PQBlocks/simulated-bifurcation`
+- **Install:** `pip install pqblocks-bifurcation`
 - **Import:** `import pqblocks_bifurcation`
 - **Command line:** library only
 - **Native dependency:** none

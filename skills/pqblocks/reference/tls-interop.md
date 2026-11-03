@@ -7,7 +7,7 @@ TLS 1.3 hybrid key exchange (X25519MLKEM768 / RFC 10024) endpoint probe, downgra
 TLS 1.3 hybrid key exchange (X25519MLKEM768 / RFC 10024) endpoint probe, downgrade detector, and key material validator.
 
 - **Area:** Interoperability
-- **Install:** `pip install git+https://github.com/PQBlocks/tls-hybrid-interop`
+- **Install:** `pip install pqblocks-tls-interop`
 - **Import:** `import pqblocks_tls_interop`
 - **Command line:** `pqblocks-tls-interop`
 - **Native dependency:** none

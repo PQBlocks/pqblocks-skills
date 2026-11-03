@@ -9,7 +9,7 @@ A small, length-prefixed binary frame (`PQCWF1`) that carries an ML-KEM cipherte
 **Standards involved:** the primitives are FIPS 203 (ML-KEM), FIPS 204 (ML-DSA) and FIPS 205 (SLH-DSA). This package does not implement them: it calls **liboqs** through **liboqs-python**. X25519 and Ed25519 come from **pyca/cryptography**. The frame format is this package's own and is not an IETF or NIST format.
 
 - **Area:** Interoperability
-- **Install:** `pip install git+https://github.com/PQBlocks/pqc-wireformat`
+- **Install:** `pip install pqblocks-wire`
 - **Import:** `import pqblocks_wire`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)

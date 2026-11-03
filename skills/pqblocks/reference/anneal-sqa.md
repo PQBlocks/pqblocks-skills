@@ -10,7 +10,7 @@ Simulated Quantum Annealing (Path-Integral Monte Carlo via Suzuki-Trotter decomp
 > Quantum-inspired classical optimisation: not cryptography, no security claim.
 
 - **Area:** Quantum-inspired
-- **Install:** `pip install git+https://github.com/PQBlocks/simulated-quantum-annealing`
+- **Install:** `pip install pqblocks-anneal-sqa`
 - **Import:** `import pqblocks_anneal_sqa`
 - **Command line:** library only
 - **Native dependency:** none
