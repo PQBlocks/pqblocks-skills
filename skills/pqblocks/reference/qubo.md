@@ -10,7 +10,7 @@ Unified mathematical representation and converter library for Quadratic Unconstr
 > Quantum-inspired classical optimisation: not cryptography, no security claim.
 
 - **Area:** Quantum-inspired
-- **Install:** `pip install git+https://github.com/PQBlocks/qubo-core`
+- **Install:** `pip install pqblocks-qubo`
 - **Import:** `import pqblocks_qubo`
 - **Command line:** library only
 - **Native dependency:** none

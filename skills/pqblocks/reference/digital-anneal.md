@@ -10,7 +10,7 @@ Digital Annealer-style parallel-trial heuristic solver for Ising and QUBO optimi
 > Quantum-inspired classical optimisation: not cryptography, no security claim.
 
 - **Area:** Quantum-inspired
-- **Install:** `pip install git+https://github.com/PQBlocks/digital-annealing`
+- **Install:** `pip install pqblocks-digital-anneal`
 - **Import:** `import pqblocks_digital_anneal`
 - **Command line:** library only
 - **Native dependency:** none

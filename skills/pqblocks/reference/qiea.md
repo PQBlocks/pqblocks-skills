@@ -10,7 +10,7 @@ Quantum-Inspired Evolutionary Algorithm (QIEA) with Q-bit representations and qu
 > Quantum-inspired classical optimisation: not cryptography, no security claim.
 
 - **Area:** Quantum-inspired
-- **Install:** `pip install git+https://github.com/PQBlocks/quantum-inspired-evolutionary`
+- **Install:** `pip install pqblocks-qiea`
 - **Import:** `import pqblocks_qiea`
 - **Command line:** library only
 - **Native dependency:** none

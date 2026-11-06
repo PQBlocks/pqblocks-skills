@@ -50,7 +50,7 @@ PQBlocks is an open-source organisation that builds verified post-quantum (PQ) c
 | Run NIST ACVP vectors against ML-KEM / ML-DSA implementations | [`pqblocks-acvp`](reference/acvp.md) | `pip install pqblocks-acvp` | `pqblocks_acvp` |
 | Reject malformed or wrong-length FIPS 203/204 inputs at a boundary | [`pqblocks-fips-check`](reference/fips-check.md) | `pip install pqblocks-fips-check` | `pqblocks_fips_check` |
 | Verify post-quantum X.509 certificate chains in browser or Node.js | [`pqblocks-browser-pqc-verifier`](reference/browser-pqc-verifier.md) | `npm install git+https://github.com/PQBlocks/browser-pqc-verifier` | `@pqblocks/browser-pqc-verifier` |
-| Build or convert QUBO / Ising models | [`pqblocks-qubo`](reference/qubo.md) | `pip install git+https://github.com/PQBlocks/qubo-core` | `pqblocks_qubo` |
+| Build or convert QUBO / Ising models | [`pqblocks-qubo`](reference/qubo.md) | `pip install pqblocks-qubo` | `pqblocks_qubo` |
 | Solve QUBO / Ising / Max-Cut (Simulated Bifurcation) | [`pqblocks-bifurcation`](reference/bifurcation.md) | `pip install pqblocks-bifurcation` | `pqblocks_bifurcation` |
 | Simulated annealing / quantum annealing / population annealing / QIEA solvers | [`pqblocks-anneal-sa`](reference/anneal-sa.md), [`pqblocks-anneal-sqa`](reference/anneal-sqa.md), [`pqblocks-population-anneal`](reference/population-anneal.md), [`pqblocks-qiea`](reference/qiea.md) | `pip install pqblocks-anneal-sa` | `pqblocks_anneal_sa` |
 | Benchmark QUBO / Ising solvers (time-to-solution) | [`pqblocks-qubo-bench`](reference/qubo-bench.md) | `pip install git+https://github.com/PQBlocks/qubo-benchmark-harness` | `pqblocks_qubo_bench` |

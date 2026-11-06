@@ -10,7 +10,7 @@ Quantum-inspired Population Annealing Monte Carlo heuristic solver for Ising and
 > Quantum-inspired classical optimisation: not cryptography, no security claim.
 
 - **Area:** Quantum-inspired
-- **Install:** `pip install git+https://github.com/PQBlocks/population-annealing`
+- **Install:** `pip install pqblocks-population-anneal`
 - **Import:** `import pqblocks_population_anneal`
 - **Command line:** library only
 - **Native dependency:** none
