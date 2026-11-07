@@ -10,7 +10,7 @@ Standardized benchmarking harness, instance loaders, and metric evaluators for q
 > Quantum-inspired classical optimisation: not cryptography, no security claim.
 
 - **Area:** Quantum-inspired
-- **Install:** `pip install git+https://github.com/PQBlocks/qubo-benchmark-harness`
+- **Install:** `pip install pqblocks-qubo-bench`
 - **Import:** `import pqblocks_qubo_bench`
 - **Command line:** `pqblocks-qubo-bench`
 - **Native dependency:** none
