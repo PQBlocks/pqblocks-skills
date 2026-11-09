@@ -7,7 +7,7 @@ Post-quantum certificate and chain verifier for browsers and Node.js using ML-DS
 A high-performance post-quantum X.509 certificate and chain verification library designed for browser environments and Node.js runtimes.
 
 - **Area:** Conformance
-- **Install:** `npm install git+https://github.com/PQBlocks/browser-pqc-verifier`
+- **Install:** `npm install @pqblocks/browser-pqc-verifier`
 - **Import:** `import { ... } from '@pqblocks/browser-pqc-verifier'`
 - **Command line:** `pqblocks-browser-verify`
 - **Native dependency:** none
