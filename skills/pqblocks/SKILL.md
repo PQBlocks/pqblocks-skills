@@ -7,7 +7,7 @@ description: Post-quantum engineering with the PQBlocks packages. Use when addin
 
 # PQBlocks: post-quantum engineering
 
-PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 29 packages, Apache-2.0, docs at https://pqblocks.github.io.
+PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 30 packages, Apache-2.0, docs at https://pqblocks.github.io.
 
 ## Rules
 
@@ -86,6 +86,7 @@ Each file holds the package summary, install line, import, command-line entry po
 - [`pqblocks-acvp`](reference/acvp.md): Cross-implementation NIST ACVP conformance harness for FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA).
 - [`pqblocks-browser-pqc-verifier`](reference/browser-pqc-verifier.md): Post-quantum certificate and chain verifier for browsers and Node.js using ML-DSA/SLH-DSA from @noble/post-quantum.
 - [`pqblocks-fips-check`](reference/fips-check.md): FIPS 203/204 boundary validator and hybrid key exchange (X25519 + ML-KEM-768) with ML-DSA-65 signatures and CBOM reporting.
+- [`pqblocks-pqc-acvp-runner`](reference/pqc-acvp-runner.md): NIST FIPS 203 and 204 ACVP Known Answer Test runner and Wycheproof harness in Node.js.
 - [`pqblocks-anneal-sa`](reference/anneal-sa.md): Simulated Annealing heuristic solver for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography.
 - [`pqblocks-anneal-schedule`](reference/anneal-schedule.md): Quantum-inspired instance-adaptive simulated annealing with statistics-driven schedule generation for Ising and QUBO optimization problems. Quantum-inspired classical optimization, not cryptography.
 - [`pqblocks-anneal-sqa`](reference/anneal-sqa.md): Simulated Quantum Annealing (Path-Integral Monte Carlo via Suzuki-Trotter decomposition) heuristic solver for Ising and QUBO optimization. Quantum-inspired classical optimization, not cryptography.
