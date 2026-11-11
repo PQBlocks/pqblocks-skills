@@ -7,7 +7,7 @@ description: Post-quantum engineering with the PQBlocks packages. Use when addin
 
 # PQBlocks: post-quantum engineering
 
-PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 30 packages, Apache-2.0, docs at https://pqblocks.github.io.
+PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 32 packages, Apache-2.0, docs at https://pqblocks.github.io.
 
 ## Rules
 
@@ -72,12 +72,14 @@ Each file holds the package summary, install line, import, command-line entry po
 - [`pqblocks-fips-dualmode`](reference/fips-dualmode.md): Dual-mode cryptographic abstraction switching between FIPS 140-3 classical crypto (ECDH/AES-GCM) and post-quantum crypto (ML-KEM/ML-DSA).
 - [`pqblocks-jose`](reference/jose.md): Post-quantum hybrid JOSE library supporting ML-KEM and ML-DSA JWE and JWS tokens.
 - [`pqblocks-primitives`](reference/primitives.md): Production-ready integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
+- [`pqblocks-qse-sdk`](reference/qse-sdk.md): Post-quantum cryptography SDK for ML-KEM, ML-DSA, and SLH-DSA (FIPS 203/204/205)
 - [`pqblocks-agility`](reference/agility.md): Cryptographic Agility Readiness Scoring (CARS) and CI/CD regression firewall for CycloneDX 1.6 CBOM inventories.
 - [`pqblocks-cbom`](reference/cbom.md): CycloneDX 1.5 CBOM metadata enrichment engine injecting quantum-safe classifications and CNSA 2.0 compliance properties.
 - [`pqblocks-cnsa-evidence`](reference/cnsa-evidence.md): CNSA 2.0 evidence pack generator for quantum-safe compliance, CBOM generation, and migration scheduling.
 - [`pqblocks-jwe-audit`](reference/jwe-audit.md): High-throughput JSON Web Encryption (JWE) cryptographic policy auditor enforcing CNSA 2.0 and NIST FIPS 203 PQC standards.
 - [`pqblocks-lint`](reference/lint.md): Static analysis for Python source that finds classical and post-quantum cryptographic primitives with a source-to-sink taint pass and reports them as a CycloneDX 1.6 CBOM or a SARIF 2.1.0 log.
 - [`pqblocks-policy`](reference/policy.md): Policy-as-code engine for post-quantum cryptography compliance and CBOM verification.
+- [`pqblocks-pqc-compat-registry`](reference/pqc-compat-registry.md): A machine-readable registry of NIST post-quantum algorithm identifiers (FIPS 203/204/205 OIDs) for compliance tooling.
 - [`pqblocks-scan`](reference/scan.md): Cryptography inventory scanner: finds classical and post-quantum algorithms in source code or a TLS endpoint and writes a CycloneDX 1.6 CBOM, a SARIF 2.1.0 report and a readiness grade.
 - [`pqblocks-csr-pop`](reference/csr-pop.md): ML-KEM (FIPS 203) PKCS#10 Certificate Signing Request (CSR) generator with RFC 9883 Proof of Possession (PoP).
 - [`pqblocks-jwe`](reference/jwe.md): Compact five-part wire format, with a serializer and structural parser, for hybrid ML-KEM-768 + X25519 JWE-style tokens; it performs no encryption itself.
