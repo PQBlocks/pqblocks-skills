@@ -9,7 +9,7 @@ Use it for native, high-performance hybrid key encapsulation (ML-KEM-768 + X2551
 Standards implemented: NIST FIPS 203 (ML-KEM), NIST FIPS 204 (ML-DSA), RFC 7748 (X25519), RFC 8032 (Ed25519), RFC 5869 (HKDF), and draft-ietf-lamps-pq-composite-sigs.
 
 - **Area:** PQ cryptography
-- **Install:** `pip install git+https://github.com/PQBlocks/hybrid-sdk`
+- **Install:** `pip install pqblocks-core`
 - **Import:** `import pqblocks_core`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)

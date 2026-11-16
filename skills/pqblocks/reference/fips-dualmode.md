@@ -7,7 +7,7 @@ Dual-mode cryptographic abstraction switching between FIPS 140-3 classical crypt
 A unified dual-mode cryptographic abstraction providing seamless switching between classical FIPS 140-3 approved algorithms and modern post-quantum cryptography.
 
 - **Area:** PQ cryptography
-- **Install:** `pip install git+https://github.com/PQBlocks/fips-dualmode`
+- **Install:** `pip install pqblocks-fips-dualmode`
 - **Import:** `import pqblocks_fips_dualmode`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)

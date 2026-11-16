@@ -27,7 +27,7 @@ alwaysApply: false
 | Task | Package | Install | Import |
 |---|---|---|---|
 | ML-KEM / ML-DSA / SLH-DSA primitives (keygen, encapsulate, sign) | [`pqblocks-primitives`](https://pqblocks.github.io/packages/primitives/) | `pip install pqblocks-primitives` | `pqblocks_primitives` |
-| Hybrid ML-KEM-768 + X25519 key establishment, native speed | [`pqblocks-core`](https://pqblocks.github.io/packages/core/) | `pip install git+https://github.com/PQBlocks/hybrid-sdk` | `pqblocks_core` |
+| Hybrid ML-KEM-768 + X25519 key establishment, native speed | [`pqblocks-core`](https://pqblocks.github.io/packages/core/) | `pip install pqblocks-core` | `pqblocks_core` |
 | Sign or verify JWTs / JWS with ML-DSA; encrypt JWE with ML-KEM | [`pqblocks-jose`](https://pqblocks.github.io/packages/jose/) | `pip install pqblocks-jose` | `pqblocks_jose` |
 | Encrypt files or byte strings to a post-quantum public key | [`pqblocks-files`](https://pqblocks.github.io/packages/files/) | `pip install pqblocks-files` | `pqblocks_files` |
 | Find RSA / ECC / weak hashes in code or a TLS endpoint; CBOM + SARIF | [`pqblocks-scan`](https://pqblocks.github.io/packages/scan/) | `pip install pqblocks-scan` | `pqblocks_scan` |

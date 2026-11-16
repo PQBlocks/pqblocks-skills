@@ -33,7 +33,7 @@ PQBlocks is an open-source organisation that builds verified post-quantum (PQ) c
 | Task | Package | Install | Import |
 |---|---|---|---|
 | ML-KEM / ML-DSA / SLH-DSA primitives (keygen, encapsulate, sign) | [`pqblocks-primitives`](reference/primitives.md) | `pip install pqblocks-primitives` | `pqblocks_primitives` |
-| Hybrid ML-KEM-768 + X25519 key establishment, native speed | [`pqblocks-core`](reference/core.md) | `pip install git+https://github.com/PQBlocks/hybrid-sdk` | `pqblocks_core` |
+| Hybrid ML-KEM-768 + X25519 key establishment, native speed | [`pqblocks-core`](reference/core.md) | `pip install pqblocks-core` | `pqblocks_core` |
 | Sign or verify JWTs / JWS with ML-DSA; encrypt JWE with ML-KEM | [`pqblocks-jose`](reference/jose.md) | `pip install pqblocks-jose` | `pqblocks_jose` |
 | Encrypt files or byte strings to a post-quantum public key | [`pqblocks-files`](reference/files.md) | `pip install pqblocks-files` | `pqblocks_files` |
 | Find RSA / ECC / weak hashes in code or a TLS endpoint; CBOM + SARIF | [`pqblocks-scan`](reference/scan.md) | `pip install pqblocks-scan` | `pqblocks_scan` |

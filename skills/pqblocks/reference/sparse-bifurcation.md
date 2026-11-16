@@ -10,7 +10,7 @@ High-performance sparse matrix Discrete Simulated Bifurcation (dSB) heuristic so
 > Quantum-inspired classical optimisation: not cryptography, no security claim.
 
 - **Area:** Quantum-inspired
-- **Install:** `pip install git+https://github.com/PQBlocks/sparse-bifurcation`
+- **Install:** `pip install pqblocks-sparse-bifurcation`
 - **Import:** `import pqblocks_sparse_bifurcation`
 - **Command line:** `pqblocks-sparse-bifurcation`, `sparse_dsb_cli`
 - **Native dependency:** none

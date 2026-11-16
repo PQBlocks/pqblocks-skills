@@ -9,7 +9,7 @@ Part of the **PQBlocks** suite of post-quantum cryptography tools and high-assur
 Maintained by The PQBlocks Authors under the Apache-2.0 license.
 
 - **Area:** PQ cryptography
-- **Install:** `pip install git+https://github.com/PQBlocks/pqblock-qse-sdk`
+- **Install:** `pip install pqblocks-qse-sdk`
 - **Import:** `import pqblocks_qse_sdk`
 - **Command line:** library only
 - **Native dependency:** none
