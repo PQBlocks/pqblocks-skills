@@ -14,7 +14,7 @@ Standardized benchmarking harness, instance loaders, and metric evaluators for q
 - **Import:** `import pqblocks_qubo_bench`
 - **Command line:** `pqblocks-qubo-bench`
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/qubo-bench/ · repository https://github.com/PQBlocks/qubo-benchmark-harness
 
 ## Quickstart (executed against the package)

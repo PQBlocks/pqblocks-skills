@@ -11,7 +11,7 @@ High-throughput CycloneDX 1.5 CBOM metadata enrichment engine injecting quantum-
 - **Import:** `import pqblocks_cbom`
 - **Command line:** `pqblocks-cbom`
 - **Native dependency:** liboqs (Open Quantum Safe)
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/cbom/ · repository https://github.com/PQBlocks/cbom-enricher
 
 ## Quickstart (executed against the package)

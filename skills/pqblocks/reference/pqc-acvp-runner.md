@@ -11,7 +11,7 @@ A high-assurance Node.js Known Answer Test (KAT) runner and Wycheproof harness f
 - **Import:** `import { ... } from '@pqblocks/pqc-acvp-runner'`
 - **Command line:** library only
 - **Native dependency:** none
-- **Status:** 1.0.0 alpha, Node.js / Browser
+- **Status:** 1.0.0 Stable, Node.js / Browser
 - **Docs:** https://pqblocks.github.io/packages/pqc-acvp-runner/ · repository https://github.com/PQBlocks/pqc-acvp-runner
 
 ## Quickstart (executed against the package)

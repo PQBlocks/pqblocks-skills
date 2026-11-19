@@ -14,7 +14,7 @@ Quantum-Inspired Evolutionary Algorithm (QIEA) with Q-bit representations and qu
 - **Import:** `import pqblocks_qiea`
 - **Command line:** library only
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/qiea/ · repository https://github.com/PQBlocks/quantum-inspired-evolutionary
 
 ## Quickstart (executed against the package)

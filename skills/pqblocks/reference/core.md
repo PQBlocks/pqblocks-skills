@@ -13,7 +13,7 @@ Standards implemented: NIST FIPS 203 (ML-KEM), NIST FIPS 204 (ML-DSA), RFC 7748 
 - **Import:** `import pqblocks_core`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/core/ · repository https://github.com/PQBlocks/hybrid-sdk
 
 ## Quickstart (executed against the package)

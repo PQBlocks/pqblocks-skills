@@ -12,7 +12,7 @@ Post-quantum hybrid JOSE (Javascript Object Signing and Encryption) library prov
 - **Import:** `import pqblocks_jose`
 - **Command line:** `pqblocks-jose`
 - **Native dependency:** liboqs (Open Quantum Safe)
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/jose/ · repository https://github.com/PQBlocks/hybrid-jose
 
 ## Quickstart (executed against the package)

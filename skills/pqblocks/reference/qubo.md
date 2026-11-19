@@ -14,7 +14,7 @@ Unified mathematical representation and converter library for Quadratic Unconstr
 - **Import:** `import pqblocks_qubo`
 - **Command line:** library only
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/qubo/ · repository https://github.com/PQBlocks/qubo-core
 
 ## Quickstart (executed against the package)

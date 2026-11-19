@@ -11,7 +11,7 @@ FIPS 203/204 boundary validator and hybrid post-quantum key exchange (X25519 + M
 - **Import:** `import pqblocks_fips_check`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/fips-check/ · repository https://github.com/PQBlocks/fips-boundary-validator
 
 ## Quickstart (executed against the package)

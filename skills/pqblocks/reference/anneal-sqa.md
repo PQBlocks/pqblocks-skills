@@ -14,7 +14,7 @@ Simulated Quantum Annealing (Path-Integral Monte Carlo via Suzuki-Trotter decomp
 - **Import:** `import pqblocks_anneal_sqa`
 - **Command line:** library only
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/anneal-sqa/ · repository https://github.com/PQBlocks/simulated-quantum-annealing
 
 ## Quickstart (executed against the package)

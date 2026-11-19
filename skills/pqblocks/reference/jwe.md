@@ -13,7 +13,7 @@ Standards used: base64url (RFC 4648 §5) and JSON (RFC 8259), with a layout mode
 - **Import:** `import pqblocks_jwe`
 - **Command line:** library only
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/jwe/ · repository https://github.com/PQBlocks/hybrid-jwe
 
 ## Quickstart (executed against the package)

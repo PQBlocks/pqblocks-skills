@@ -11,7 +11,7 @@ TLS 1.3 hybrid key exchange (X25519MLKEM768 / RFC 10024) endpoint probe, downgra
 - **Import:** `import pqblocks_tls_interop`
 - **Command line:** `pqblocks-tls-interop`
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/tls-interop/ · repository https://github.com/PQBlocks/tls-hybrid-interop
 
 ## Quickstart (executed against the package)

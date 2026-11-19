@@ -13,7 +13,7 @@ A small, length-prefixed binary frame (`PQCWF1`) that carries an ML-KEM cipherte
 - **Import:** `import pqblocks_wire`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/wire/ · repository https://github.com/PQBlocks/pqc-wireformat
 
 ## Quickstart (executed against the package)

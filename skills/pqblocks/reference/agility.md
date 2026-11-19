@@ -13,7 +13,7 @@ Implements the 5-dimension CARS model (Costa, IACR ePrint 2026/1467) and OASIS S
 - **Import:** `import pqblocks_agility`
 - **Command line:** `pqblocks-agility`
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/agility/ · repository https://github.com/PQBlocks/crypto-agility
 
 ## Quickstart (executed against the package)

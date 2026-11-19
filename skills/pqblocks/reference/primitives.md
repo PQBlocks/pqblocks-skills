@@ -2,16 +2,16 @@
 
 # pqblocks-primitives
 
-Production-ready integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
+Integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
 
-Production-ready integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
+Integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
 
 - **Area:** PQ cryptography
 - **Install:** `pip install pqblocks-primitives`
 - **Import:** `import pqblocks_primitives`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/primitives/ · repository https://github.com/PQBlocks/fips-pqc-primitives
 
 ## Quickstart (executed against the package)

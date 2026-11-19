@@ -11,7 +11,7 @@ High-throughput JSON Web Encryption (JWE) cryptographic policy auditor enforcing
 - **Import:** `import pqblocks_jwe_audit`
 - **Command line:** library only
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/jwe-audit/ · repository https://github.com/PQBlocks/jwe-policy-auditor
 
 ## Quickstart (executed against the package)

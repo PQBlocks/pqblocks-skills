@@ -14,7 +14,7 @@ How it works: it parses the code with Python's `ast` module (the code is never e
 - **Import:** `import pqblocks_lint`
 - **Command line:** `pqblocks-lint`
 - **Native dependency:** liboqs (Open Quantum Safe)
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/lint/ · repository https://github.com/PQBlocks/pqc-lint
 
 ## Quickstart (executed against the package)

@@ -7,7 +7,7 @@ description: Post-quantum engineering with the PQBlocks packages. Use when addin
 
 # PQBlocks: post-quantum engineering
 
-PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 32 packages, Apache-2.0, docs at https://pqblocks.github.io.
+PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 33 packages, Apache-2.0, docs at https://pqblocks.github.io.
 
 ## Rules
 
@@ -71,11 +71,12 @@ Each file holds the package summary, install line, import, command-line entry po
 - [`pqblocks-files`](reference/files.md): Hybrid post-quantum file encryption: ML-KEM-768 plus X25519 key encapsulation with chunked ChaCha20-Poly1305 in the pfsh v1 format.
 - [`pqblocks-fips-dualmode`](reference/fips-dualmode.md): Dual-mode cryptographic abstraction switching between FIPS 140-3 classical crypto (ECDH/AES-GCM) and post-quantum crypto (ML-KEM/ML-DSA).
 - [`pqblocks-jose`](reference/jose.md): Post-quantum hybrid JOSE library supporting ML-KEM and ML-DSA JWE and JWS tokens.
-- [`pqblocks-primitives`](reference/primitives.md): Production-ready integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
+- [`pqblocks-primitives`](reference/primitives.md): Integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
 - [`pqblocks-qse-sdk`](reference/qse-sdk.md): Post-quantum cryptography SDK for ML-KEM, ML-DSA, and SLH-DSA (FIPS 203/204/205)
 - [`pqblocks-agility`](reference/agility.md): Cryptographic Agility Readiness Scoring (CARS) and CI/CD regression firewall for CycloneDX 1.6 CBOM inventories.
 - [`pqblocks-cbom`](reference/cbom.md): CycloneDX 1.5 CBOM metadata enrichment engine injecting quantum-safe classifications and CNSA 2.0 compliance properties.
 - [`pqblocks-cnsa-evidence`](reference/cnsa-evidence.md): CNSA 2.0 evidence pack generator for quantum-safe compliance, CBOM generation, and migration scheduling.
+- [`pqblocks-cnsa2-pki-auditor`](reference/cnsa2-pki-auditor.md): X.509 certificate estate compliance auditor enforcing NSA CNSA 2.0 and NIST FIPS 203/204/205 post-quantum standards with SARIF and CycloneDX 1.6 CBOM output.
 - [`pqblocks-jwe-audit`](reference/jwe-audit.md): High-throughput JSON Web Encryption (JWE) cryptographic policy auditor enforcing CNSA 2.0 and NIST FIPS 203 PQC standards.
 - [`pqblocks-lint`](reference/lint.md): Static analysis for Python source that finds classical and post-quantum cryptographic primitives with a source-to-sink taint pass and reports them as a CycloneDX 1.6 CBOM or a SARIF 2.1.0 log.
 - [`pqblocks-policy`](reference/policy.md): Policy-as-code engine for post-quantum cryptography compliance and CBOM verification.

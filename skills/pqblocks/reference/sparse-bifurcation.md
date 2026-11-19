@@ -14,7 +14,7 @@ High-performance sparse matrix Discrete Simulated Bifurcation (dSB) heuristic so
 - **Import:** `import pqblocks_sparse_bifurcation`
 - **Command line:** `pqblocks-sparse-bifurcation`, `sparse_dsb_cli`
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/sparse-bifurcation/ · repository https://github.com/PQBlocks/sparse-bifurcation
 
 ## Quickstart (executed against the package)

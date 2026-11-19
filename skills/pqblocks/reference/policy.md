@@ -12,7 +12,7 @@ Policy-as-code engine for evaluating cryptographic posture, post-quantum complia
 - **Import:** `import pqblocks_policy`
 - **Command line:** `pqblocks-policy`
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/policy/ · repository https://github.com/PQBlocks/crypto-policy-engine
 
 ## Quickstart (executed against the package)

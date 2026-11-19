@@ -12,7 +12,7 @@ CNSA 2.0 Procurement Evidence Pack Generator for federal contractors and enterpr
 - **Import:** `import pqblocks_cnsa_evidence`
 - **Command line:** library only
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/cnsa-evidence/ · repository https://github.com/PQBlocks/cnsa-evidence-pack
 
 ## Quickstart (executed against the package)

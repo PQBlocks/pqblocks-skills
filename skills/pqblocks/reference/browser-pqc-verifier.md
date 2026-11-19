@@ -11,7 +11,7 @@ A high-performance post-quantum X.509 certificate and chain verification library
 - **Import:** `import { ... } from '@pqblocks/browser-pqc-verifier'`
 - **Command line:** `pqblocks-browser-verify`
 - **Native dependency:** none
-- **Status:** 0.1.0 alpha, Node.js / Browser
+- **Status:** 0.1.0 Stable, Node.js / Browser
 - **Docs:** https://pqblocks.github.io/packages/browser-pqc-verifier/ · repository https://github.com/PQBlocks/browser-pqc-verifier
 
 ## Quickstart (executed against the package)

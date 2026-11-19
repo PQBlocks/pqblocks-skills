@@ -14,7 +14,7 @@ Classical Simulated Annealing heuristic solver for Ising spin-glass and QUBO opt
 - **Import:** `import pqblocks_anneal_sa`
 - **Command line:** `pqblocks-anneal-sa`
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/anneal-sa/ · repository https://github.com/PQBlocks/simulated-annealing
 
 ## Quickstart (executed against the package)

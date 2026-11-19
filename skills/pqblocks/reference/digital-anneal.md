@@ -14,7 +14,7 @@ Digital Annealer-style parallel-trial heuristic solver for Ising and QUBO optimi
 - **Import:** `import pqblocks_digital_anneal`
 - **Command line:** library only
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/digital-anneal/ · repository https://github.com/PQBlocks/digital-annealing
 
 ## Quickstart (executed against the package)

@@ -11,7 +11,7 @@ A unified dual-mode cryptographic abstraction providing seamless switching betwe
 - **Import:** `import pqblocks_fips_dualmode`
 - **Command line:** library only
 - **Native dependency:** liboqs (Open Quantum Safe)
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/fips-dualmode/ · repository https://github.com/PQBlocks/fips-dualmode
 
 ## Quickstart (executed against the package)

@@ -13,7 +13,7 @@ Standards: FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA), RFC 9881 / 
 - **Import:** `import { ... } from '@pqblocks/pqc-compat-registry'`
 - **Command line:** `pqc-registry`, `registry-cli`
 - **Native dependency:** none
-- **Status:** 1.0.0 alpha, Node.js / Browser
+- **Status:** 1.0.0 Stable, Node.js / Browser
 - **Docs:** https://pqblocks.github.io/packages/pqc-compat-registry/ · repository https://github.com/PQBlocks/pqc-compat-registry
 
 ## Quickstart (executed against the package)

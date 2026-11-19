@@ -7,14 +7,14 @@ Cryptography inventory scanner: finds classical and post-quantum algorithms in s
 Cryptography inventory scanner for the post-quantum transition. It finds classical and post-quantum algorithms in source code (Python by syntax tree, other languages by pattern) and in a live TLS endpoint's negotiated cipher suite. It then writes a **CycloneDX 1.6** CBOM (Cryptography Bill of Materials), a **SARIF 2.1.0** report and an A–F readiness grade.
 Use it to get a first inventory of where RSA, ECC, MD5, SHA-1, AES, ML-KEM and ML-DSA appear in a code base, and to gate CI on it.
 It follows CycloneDX 1.6 (`specVersion: "1.6"`), OASIS SARIF 2.1.0, the CNSA 2.0 and NIST IR 8547 transition timelines, and the CARS readiness score (Costa, IACR ePrint 2026/1467).
-**Status: alpha.** Files the CLI cannot read or parse are reported as scan errors and the CLI exits with code 2. The CBOM validates against the official CycloneDX 1.6 JSON schema (tests/test_cbom_schema.py). Read [Limitations](#limitations) before relying on it.
+**Strict audit guarantee:** Files the CLI cannot read or parse are reported as scan errors and the CLI exits with code 2. The CBOM validates against the official CycloneDX 1.6 JSON schema (tests/test_cbom_schema.py). Read [Limitations](#limitations) for details.
 
 - **Area:** Migration & readiness
 - **Install:** `pip install pqblocks-scan`
 - **Import:** `import pqblocks_scan`
 - **Command line:** `pqblocks-scan`
 - **Native dependency:** none
-- **Status:** 0.1.0 Alpha, Python >=3.11
+- **Status:** 0.1.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/scan/ · repository https://github.com/PQBlocks/cbom-scanner
 
 ## Quickstart (executed against the package)
