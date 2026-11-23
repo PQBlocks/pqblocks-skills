@@ -7,7 +7,7 @@ description: Post-quantum engineering with the PQBlocks packages. Use when addin
 
 # PQBlocks: post-quantum engineering
 
-PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 33 packages, Apache-2.0, docs at https://pqblocks.github.io.
+PQBlocks is an open-source organisation that builds verified post-quantum (PQ) components: cryptography, migration and readiness tooling, protocol interoperability, conformance testing and quantum-inspired optimisation. 35 packages, Apache-2.0, docs at https://pqblocks.github.io.
 
 ## Rules
 
@@ -70,6 +70,7 @@ Each file holds the package summary, install line, import, command-line entry po
 - [`pqblocks-core`](reference/core.md): Post-quantum hybrid cryptography core SDK with C shared libraries and policy enforcement.
 - [`pqblocks-files`](reference/files.md): Hybrid post-quantum file encryption: ML-KEM-768 plus X25519 key encapsulation with chunked ChaCha20-Poly1305 in the pfsh v1 format.
 - [`pqblocks-fips-dualmode`](reference/fips-dualmode.md): Dual-mode cryptographic abstraction switching between FIPS 140-3 classical crypto (ECDH/AES-GCM) and post-quantum crypto (ML-KEM/ML-DSA).
+- [`pqblocks-hybrid-cert-validator`](reference/hybrid-cert-validator.md): Composite X.509 hybrid certificate validator enforcing NSA CNSA 2.0 policy (RSA-3072 + ML-DSA-65) per draft-ietf-lamps-pq-composite-keys.
 - [`pqblocks-jose`](reference/jose.md): Post-quantum hybrid JOSE library supporting ML-KEM and ML-DSA JWE and JWS tokens.
 - [`pqblocks-primitives`](reference/primitives.md): Integrated post-quantum cryptographic primitives (ML-KEM, ML-DSA, SLH-DSA, and hybrid schemes).
 - [`pqblocks-qse-sdk`](reference/qse-sdk.md): Post-quantum cryptography SDK for ML-KEM, ML-DSA, and SLH-DSA (FIPS 203/204/205)
@@ -84,6 +85,7 @@ Each file holds the package summary, install line, import, command-line entry po
 - [`pqblocks-scan`](reference/scan.md): Cryptography inventory scanner: finds classical and post-quantum algorithms in source code or a TLS endpoint and writes a CycloneDX 1.6 CBOM, a SARIF 2.1.0 report and a readiness grade.
 - [`pqblocks-csr-pop`](reference/csr-pop.md): ML-KEM (FIPS 203) PKCS#10 Certificate Signing Request (CSR) generator with RFC 9883 Proof of Possession (PoP).
 - [`pqblocks-jwe`](reference/jwe.md): Compact five-part wire format, with a serializer and structural parser, for hybrid ML-KEM-768 + X25519 JWE-style tokens; it performs no encryption itself.
+- [`pqblocks-tls`](reference/tls.md): Post-quantum hybrid TLS 1.3 handshake fuzzer and verification harness (X25519 + ML-KEM-768).
 - [`pqblocks-tls-interop`](reference/tls-interop.md): TLS 1.3 hybrid key exchange (X25519MLKEM768 / RFC 10024) endpoint probe, downgrade detector, and key material validator.
 - [`pqblocks-wire`](reference/wire.md): Length-prefixed container format (PQCWF1) for ML-KEM ciphertexts and ML-DSA / SLH-DSA signatures, with thin wrappers over liboqs-python and pyca/cryptography; it implements no primitive itself.
 - [`pqblocks-acvp`](reference/acvp.md): Cross-implementation NIST ACVP conformance harness for FIPS 203 (ML-KEM) and FIPS 204 (ML-DSA).
