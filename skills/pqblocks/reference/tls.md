@@ -10,9 +10,9 @@ Part of the **PQBlocks** post-quantum cryptography suite. Maintained by **Govind
 - **Area:** Interoperability
 - **Install:** `pip install git+https://github.com/PQBlocks/tls-hybrid-fuzzer`
 - **Import:** `import pqblocks_tls`
-- **Command line:** library only
+- **Command line:** `pqblocks-tlsfuzz`
 - **Native dependency:** none
-- **Status:** 0.1.0 Stable, Python >=3.10
+- **Status:** 0.2.0 Stable, Python >=3.10
 - **Docs:** https://pqblocks.github.io/packages/tls/ · repository https://github.com/PQBlocks/tls-hybrid-fuzzer
 
 ## Quickstart (executed against the package)

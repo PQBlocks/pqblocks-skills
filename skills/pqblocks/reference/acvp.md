@@ -11,9 +11,9 @@ Standards implemented: NIST ACVP, FIPS 203 (ML-KEM), FIPS 204 (ML-DSA). SLH-DSA 
 - **Area:** Conformance
 - **Install:** `pip install pqblocks-acvp`
 - **Import:** `import pqblocks_acvp`
-- **Command line:** library only
+- **Command line:** `pqblocks-acvp`
 - **Native dependency:** liboqs (Open Quantum Safe)
-- **Status:** 0.1.0 Stable, Python >=3.11
+- **Status:** 0.2.0 Stable, Python >=3.11
 - **Docs:** https://pqblocks.github.io/packages/acvp/ · repository https://github.com/PQBlocks/acvp-conformance
 
 ## Quickstart (executed against the package)

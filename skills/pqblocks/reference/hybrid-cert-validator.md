@@ -9,7 +9,7 @@ Part of the **PQBlocks** post-quantum suite. Maintained by **Govind Dubey** and 
 
 - **Area:** PQ cryptography
 - **Install:** `pip install git+https://github.com/PQBlocks/hybrid-cert-validator`
-- **Import:** `import pqblocks_hybrid_cert_validator.egg-info`
+- **Import:** `import pqblocks.hybrid_cert_validator`
 - **Command line:** `pqblocks-hybrid-cert-validate`
 - **Native dependency:** none
 - **Status:** 0.1.0 Stable, Python >=3.10
